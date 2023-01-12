@@ -1,0 +1,23 @@
+.main-button {
+  color: var(--main-dark);
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  outline: none;
+  text-decoration: none;
+  padding: 12px;
+}
+
+.main-button:active {
+  border-bottom: 3px solid var(--main-dark);
+  padding-bottom: 9px;
+}
+
+.main-button:hover {
+  background-color: var(--main-dark);
+  color: var(--white);
+}
+
+.main-button:focus {
+  background-color: var(--main-orange);
+  color: var(--white);
+}
