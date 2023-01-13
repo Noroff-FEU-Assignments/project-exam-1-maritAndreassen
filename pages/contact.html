@@ -33,25 +33,33 @@
       <h1 class="form-title">Submit a request</h1>
     </div>
     <div class="form-container">
-      <form>
+      <form id="contact-form">
         <div class="form-field">
           <label for="fname">Name:</label>
           <input type="text" id="fname" name="fname" /> <br />
         </div>
+        <div class="form-error" id="fnameError">Name must be more then 5 characters long.</div>
         <div class="form-field">
           <label for="email">E-mail:</label>
           <input type="email" id="email" name="email" /> <br />
         </div>
+        <div class="form-error" id="emailError">Please insert a valid e-mail address.</div>
         <div class="form-field">
           <label for="subject">Subject:</label>
           <input type="text" id="subject" name="subject" /> <br />
+        </div>
+        <div class="form-error" id="subjectError">
+          Must have a value with a minimum length of 15 characters.
         </div>
         <div class="form-field">
           <label for="message">Message:</label>
           <input type="text" id="message" name="message" /> <br />
         </div>
+        <div class="form-error" id="messageError">
+          Must have a value with a minimum length of 25 characters.
+        </div>
         <div class="submit">
-          <input type="submit" class="submit-button" value="Submit" />
+          <input type="submit" class="submit-button" value="SUBMIT" />
         </div>
       </form>
     </div>
@@ -78,5 +86,6 @@
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
       </div>
     </footer>
+    <script src="../js/form-validation.js"></script>
   </body>
 </html>

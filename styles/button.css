@@ -29,5 +29,7 @@
   letter-spacing: 0.04rem;
   outline: none;
   text-decoration: none;
-  padding: 12px;
+  padding: 10px 20px;
 }
+
+/*TODO: style submit button when background-img is on place*/

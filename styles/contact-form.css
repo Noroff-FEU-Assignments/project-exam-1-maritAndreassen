@@ -17,6 +17,7 @@
 
 .form-title {
   font-size: 1.25rem;
+  font-weight: 400;
 }
 
 .form-container {
@@ -37,6 +38,15 @@
 
 .form-field input {
   flex-basis: 60%;
+}
+
+.form-error {
+  display: none;
+  color: var(--error-red);
+  font-size: 0.8rem;
+  margin-top: 2px;
+  text-align: end;
+  padding: 0 15px 0 0;
 }
 
 #subject {
