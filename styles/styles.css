@@ -31,6 +31,7 @@ a {
 
 hr {
   color: var(--main-grey);
+  margin: 0;
 }
 
 header {
@@ -44,6 +45,30 @@ header {
   color: var(--main-grey);
 }
 
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.nav-bar img {
+  width: 225px;
+  height: 59px;
+}
+
+@media (max-width: 516px) {
+  .nav-bar {
+    justify-content: space-around;
+  }
+
+  .logo {
+    padding: 5px 5px 0;
+  }
+}
+
 .footer-content {
   max-width: 250px;
   display: flex;
@@ -51,6 +76,7 @@ header {
   align-items: center;
   text-align: center;
   margin: auto;
+  padding: 16px;
 }
 
 .contact-icon-wrapper {
