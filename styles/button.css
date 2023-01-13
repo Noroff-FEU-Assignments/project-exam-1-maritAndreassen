@@ -21,3 +21,13 @@
   background-color: var(--main-orange);
   color: var(--white);
 }
+
+.submit-button {
+  background-color: var(--main-dark);
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  outline: none;
+  text-decoration: none;
+  padding: 12px;
+}

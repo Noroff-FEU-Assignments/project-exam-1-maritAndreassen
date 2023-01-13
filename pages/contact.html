@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Blog containing posts about climbing and hiking in Norway." />
-    <title>Climbing and hiking</title>
-    <link href="styles/styles.css" rel="stylesheet" />
+    <title>Climbing and hiking - contact</title>
+    <link href="../styles/styles.css" rel="stylesheet" />
+    <link href="../styles/contact-form.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/90297555d7.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <div class="nav-bar">
-        <a class="logo" href="index.html">
-          <img src="Logo.png" alt="out going, logo" />
+        <a class="logo" href="../index.html">
+          <img src="../Logo.png" alt="out going, logo" />
         </a>
         <nav>
           <ul>
             <li><a class="main-button" href="">BLOG</a></li>
-            <li><a class="main-button" href="pages/contact.html">CONTACT</a></li>
+            <li><a class="main-button" href="./contact.html">CONTACT</a></li>
             <li><a class="main-button" href="">ABOUT</a></li>
           </ul>
         </nav>
@@ -28,7 +29,32 @@
         <p>Climbing and hiking</p>
       </div>
     </header>
-    <p>Hello peeps</p>
+    <div class="box">
+      <h1 class="form-title">Submit a request</h1>
+    </div>
+    <div class="form-container">
+      <form>
+        <div class="form-field">
+          <label for="fname">Name:</label>
+          <input type="text" id="fname" name="fname" /> <br />
+        </div>
+        <div class="form-field">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" /> <br />
+        </div>
+        <div class="form-field">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" /> <br />
+        </div>
+        <div class="form-field">
+          <label for="message">Message:</label>
+          <input type="text" id="message" name="message" /> <br />
+        </div>
+        <div class="submit">
+          <input type="submit" class="submit-button" value="Submit" />
+        </div>
+      </form>
+    </div>
     <footer>
       <hr aria-hidden />
       <div class="footer-content">

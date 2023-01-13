@@ -1,0 +1,64 @@
+.box {
+  height: 50px;
+  position: relative;
+  z-index: 1;
+  margin: 20px auto;
+  padding: 2px 2px 2px 10px;
+}
+
+.form-title::before {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  bottom: 0;
+  width: 5rem;
+  border-bottom: 3px solid var(--main-dark);
+}
+
+.form-title {
+  font-size: 1.25rem;
+}
+
+.form-container {
+  border: 3px solid var(--main-dark);
+  margin: 0 0 50px;
+  padding: 30px 50px;
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.form-field label {
+  flex-basis: 40%;
+}
+
+.form-field input {
+  flex-basis: 60%;
+}
+
+#subject {
+  min-height: 4rem;
+}
+
+#message {
+  min-height: 8rem;
+}
+
+.submit {
+  text-align: center;
+  margin: 20px;
+}
+
+@media (max-width: 516px) {
+  .form-container {
+    padding: 0;
+  }
+
+  .form-field {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
