@@ -5,49 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Blog containing posts about climbing and hiking in Norway." />
-    <title>Climbing and hiking</title>
-    <link href="styles/styles.css" rel="stylesheet" />
-    <link href="styles/home.css" rel="stylesheet" />
+    <title>Climbing and hiking - contact</title>
+    <link href="../styles/styles.css" rel="stylesheet" />
+    <link href="../styles/blog.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/90297555d7.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <div class="nav-bar">
-        <a class="logo" href="index.html">
-          <img src="Logo.png" alt="out going, logo" />
+        <a class="logo" href="../index.html">
+          <img src="../Logo.png" alt="out going, logo" />
         </a>
         <nav>
           <ul>
-            <li><a class="button main-button" href="pages/blog.html">BLOG</a></li>
-            <li><a class="button main-button" href="pages/contact.html">CONTACT</a></li>
+            <li><a class="button main-button active-page" href="">BLOG</a></li>
+            <li><a class="button main-button" href="./contact.html">CONTACT</a></li>
             <li><a class="button main-button" href="">ABOUT</a></li>
           </ul>
         </nav>
       </div>
       <div class="header-bottom-line">
-        <hr aria-hidden="true" />
+        <hr aria-hidden />
         <p>Climbing and hiking</p>
       </div>
     </header>
     <main>
-      <section class="mainImg-container">
-        <div class="mainImg-content">
-          <h1>Outgoing is a blog about..</h1>
-          <p class="text-content">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-          </p>
-          <p class="text-content-small">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-          </p>
-          <a class="button link-button" href="">Read more..</a>
-        </div>
-      </section>
+      <div class="subpage-title-container">
+        <h1 class="subpage-title">All of my blog posts</h1>
+      </div>
+      <div class="blogpost-container"></div>
     </main>
     <footer>
-      <hr aria-hidden="true" />
+      <hr aria-hidden />
       <div class="footer-content">
         <ul class="contact-icon-wrapper">
           <li>
@@ -69,5 +58,6 @@
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
       </div>
     </footer>
+    <script src="../js/getBlogPost.js"></script>
   </body>
 </html>

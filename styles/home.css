@@ -1,0 +1,43 @@
+.mainImg-container {
+  margin: 0 0 50px;
+  height: 590px;
+  background-image: url("https://myblog.maritstuderer.one/wp-content/uploads/2022/12/About-scaled.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.mainImg-container:hover {
+  opacity: 0.8;
+}
+
+.mainImg-content {
+  float: right;
+  text-align: left;
+  width: 20rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.text-content-small {
+  display: none;
+}
+
+@media (max-width: 516px) {
+  .mainImg-content {
+    background-color: var(--main-dark);
+    bottom: 1rem;
+    color: var(--white);
+    text-align: center;
+    top: auto;
+  }
+
+  .text-content-small {
+    display: block;
+  }
+
+  .text-content {
+    display: none;
+  }
+}

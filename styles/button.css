@@ -1,9 +1,12 @@
-.main-button {
-  color: var(--main-dark);
+.button {
   font-weight: 600;
   letter-spacing: 0.04rem;
   outline: none;
   text-decoration: none;
+}
+
+.main-button {
+  color: var(--main-dark);
   padding: 12px;
 }
 
@@ -22,14 +25,64 @@
   color: var(--white);
 }
 
-.submit-button {
-  background-color: var(--main-dark);
-  color: var(--white);
-  font-weight: 600;
-  letter-spacing: 0.04rem;
-  outline: none;
-  text-decoration: none;
-  padding: 10px 20px;
+.active-page {
+  border-bottom: 3px solid var(--main-orange);
 }
 
-/*TODO: style submit button when background-img is on place*/
+.submit-button {
+  background-color: var(--main-dark);
+  border: 0;
+  color: var(--white);
+  padding: 12px 25px;
+}
+
+.submit-button:active {
+  border-bottom: 3px solid var(--main-dark);
+  padding-bottom: 9px;
+}
+
+.submit-button:hover {
+  background-color: var(--white);
+  color: var(--main-dark);
+}
+
+.submit-button:focus {
+  background-color: var(--main-orange);
+  color: var(--white);
+}
+
+.secondary-button {
+  background-color: var(--white);
+  color: var(--main-dark);
+  padding: 12px;
+}
+
+.secondary-button:active {
+  border-bottom: 3px solid var(--main-dark);
+  padding-bottom: 9px;
+}
+
+.secondary-button:hover {
+  background-color: var(--main-orange);
+  color: var(--white);
+}
+
+.secondary-button:focus {
+  background-color: var(--main-orange);
+  color: var(--white);
+}
+
+.link-button {
+  color: var(--main-orange);
+  font-weight: 500;
+}
+
+.link-button:active {
+  border-bottom: 2px solid var(--main-orange);
+}
+
+.link-button:hover,
+.link-button:focus {
+  background-color: var(--main-orange);
+  color: var(--white);
+}
