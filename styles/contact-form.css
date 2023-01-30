@@ -4,9 +4,13 @@
   position: relative;
 }
 
-.form-container::after {
+.form-container::before {
   content: "";
   position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   background-image: url("https://myblog.maritstuderer.one/wp-content/uploads/2022/12/Sunset-i-Lofoten-scaled.jpg");
   background-size: cover;
   opacity: 0.4;

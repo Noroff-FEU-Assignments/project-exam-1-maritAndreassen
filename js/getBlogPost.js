@@ -28,14 +28,13 @@ async function getMedia(url, list) {
   }
 }
 
-async function getSomething() {
+async function getBlogpostAndMedia() {
   getMedia(mediaUrl + "?per_page=20", imgList);
   await getPosts(baseUrl + "?per_page=20", createHTML);
 }
 
-getSomething();
+getBlogpostAndMedia();
 
-/* find funksjonen finner objectet der id ene er like, altså find returnerer objectet, så an jeg bruke den returnen til og finne url`en*/
 function getBlogpostImg(mediaId) {
   const result = imgList.find((img) => img.id === mediaId);
   console.log(result, "JUHUUUU");
@@ -44,17 +43,11 @@ function getBlogpostImg(mediaId) {
 
 function createHTML(blogPost) {
   blogpostContainer.innerHTML += `
-  <article class="medium-img" style="background-image:url('${getBlogpostImg(
-    blogPost.featured_media
-  )}')">
+  <article class="img" style="background-image:url('${getBlogpostImg(blogPost.featured_media)}')">
     <div class="content">
       <h2>${blogPost.title.rendered}</h2> 
-      <a href="" class="secondary-button">VIEW</a>
+      <a href="" class="secondary-button view-button">VIEW</a>
     </div>
     
   </article>`;
 }
-
-/*<div class="medium-img" style="background-image:url('${getBlogpostImg(
-      blogPost.featured_media
-    )}')"></div>*/
