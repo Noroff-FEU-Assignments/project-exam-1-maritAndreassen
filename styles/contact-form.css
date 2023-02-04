@@ -24,6 +24,7 @@
 
 .form-field label {
   flex-basis: 40%;
+  font-weight: 600;
 }
 
 .form-field input {

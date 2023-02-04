@@ -1,0 +1,54 @@
+.main-img-container {
+  background-image: url("https://myblog.maritstuderer.one/wp-content/uploads/2022/12/Soloppgang-scaled.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 590px;
+}
+
+.img1 {
+  background-image: url("../images/Splitboar on top Small.jpg");
+  width: 520px;
+  height: 695px;
+  margin-bottom: 1rem;
+}
+
+.img2 {
+  background-image: url("../images/Climbing small.jpg");
+  background-size: cover;
+  height: 380px;
+  margin-bottom: 1rem;
+}
+
+.img3 {
+  background-image: url("../images/vega small.jpg");
+  height: 300px;
+  margin-bottom: 1rem;
+}
+
+.subpage-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.subpage-content p {
+  flex-basis: 60%;
+}
+
+.subpage-content img {
+  margin-left: 5rem;
+}
+
+.img-collection {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  justify-content: space-between;
+}
+
+.img-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 520px;
+}
