@@ -1,5 +1,4 @@
 .img-container {
-  height: 590px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -8,6 +7,7 @@
 .mainImg {
   margin: 0 0 50px;
   background-image: url("https://myblog.maritstuderer.one/wp-content/uploads/2022/12/About-scaled.jpg");
+  height: 590px;
 }
 
 .img-content {
@@ -15,7 +15,7 @@
   text-align: left;
   position: absolute;
   top: 2rem;
-  right: 2rem;
+  right: 5rem;
 }
 
 .mainImg-content {
@@ -27,21 +27,26 @@
 }
 
 .quoteImg {
-  margin: 50px 0 50px;
+  margin: 80px 0 50px;
   background-image: url("https://myblog.maritstuderer.one/wp-content/uploads/2022/12/View-scaled.jpg");
+  height: 490px;
 }
 
 .quoteImg-content {
   width: 12rem;
 }
 
-@media (max-width: 516px) {
+@media (max-width: 820px) {
   .mainImg-content {
     background-color: var(--main-dark);
     bottom: 1rem;
     color: var(--white);
     text-align: center;
     top: auto;
+  }
+
+  .img-content {
+    right: 2rem;
   }
 
   .text-content-small {
@@ -95,6 +100,10 @@
   height: 340px;
   margin-left: 14px;
   width: 300px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .img {
@@ -103,7 +112,7 @@
 }
 
 .title {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   padding: 4px 6px;
   width: inherit;
 }

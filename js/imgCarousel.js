@@ -19,7 +19,9 @@ function getBlogpostImg(mediaId) {
 
 function createHTML(blogPost) {
   blogPostCarousel.innerHTML += `
-  <article class="img" style="background-image:url('${getBlogpostImg(blogPost.featured_media)}')">  
+  <article src="/pages/about.html" class="img" style="background-image:url('${getBlogpostImg(
+    blogPost.featured_media
+  )}')">  
   <div class="title">
       <h2>${blogPost.title.rendered}</h2> 
     </div>

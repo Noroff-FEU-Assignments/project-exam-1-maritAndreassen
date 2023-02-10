@@ -27,11 +27,13 @@
   font-weight: 600;
 }
 
-.form-field input {
+.form-field input,
+.form-field textarea {
   background-color: var(--white);
   border: 1px solid var(--main-dark);
   flex-basis: 60%;
   z-index: 1;
+  outline: none;
 }
 
 .form-error {
