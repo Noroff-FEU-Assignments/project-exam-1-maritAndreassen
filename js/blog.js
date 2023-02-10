@@ -7,7 +7,7 @@ const blogpostContainer = document.querySelector(".blogpost-container");
 let imgList = [];
 
 async function getBlogpostAndMedia() {
-  getMedia(mediaUrl + "?per_page=30", imgList);
+  await getMedia(mediaUrl + "?per_page=30", imgList);
   await getPosts(baseUrl + "?per_page=20", createHTML);
 }
 
@@ -21,7 +21,7 @@ function createHTML(blogPost) {
   <article class="img" style="background-image:url('${getBlogpostImg(blogPost.featured_media)}')">  
   <div class="content">
       <h2>${blogPost.title.rendered}</h2> 
-      <a href="" class="secondary-button view-button">VIEW</a>
+      <a href="./blogPage.html?id=${blogPost.id}" class="secondary-button view-button">VIEW</a>
     </div>
   </article>`;
 }

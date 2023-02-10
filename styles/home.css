@@ -10,10 +10,6 @@
   background-image: url("https://myblog.maritstuderer.one/wp-content/uploads/2022/12/About-scaled.jpg");
 }
 
-.mainImg:hover {
-  opacity: 0.8;
-}
-
 .img-content {
   float: right;
   text-align: left;

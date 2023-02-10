@@ -4,12 +4,11 @@ const baseUrl = "https://myblog.maritstuderer.one/wp-json/wp/v2/posts";
 const mediaUrl = "https://myblog.maritstuderer.one/wp-json/wp/v2/media/";
 const blogPostCarousel = document.querySelector(".carousel");
 const carousel = document.querySelector(".carousel");
-const img = document.querySelector(".img");
 
 let imgList = [];
 
 async function getBlogpostAndMedia() {
-  getMedia(mediaUrl + "?per_page=30", imgList);
+  await getMedia(mediaUrl + "?per_page=30", imgList);
   await getPosts(baseUrl + "?per_page=8", createHTML);
 }
 
@@ -20,20 +19,15 @@ function getBlogpostImg(mediaId) {
 
 function createHTML(blogPost) {
   blogPostCarousel.innerHTML += `
-
-  
   <article class="img" style="background-image:url('${getBlogpostImg(blogPost.featured_media)}')">  
   <div class="title">
       <h2>${blogPost.title.rendered}</h2> 
     </div>
-  </article>
-  
-  `;
+  </article>`;
 }
 
 getBlogpostAndMedia();
 
-let firstImg = document.querySelectorAll(".img");
 let arrowIcons = document.querySelectorAll(".wrapper i");
 let firstImgWidth = 300 + 14;
 
@@ -70,3 +64,8 @@ arrowIcons.forEach((icon) => {
     </div>
   </article>
 */
+
+/*function setButtonHover() {
+  let mainImg = document.querySelector(".mainImg");
+  mainImg.state.addEventListener ===   
+}*/

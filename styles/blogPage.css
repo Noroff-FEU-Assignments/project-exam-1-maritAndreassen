@@ -1,0 +1,42 @@
+.img {
+  width: 100%;
+  height: 520px;
+  background-size: cover;
+  background-position: center;
+}
+
+.wp-block-group figure {
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+.backLink {
+  margin: 20px 0 20px 20px;
+  width: fit-content;
+  padding-bottom: 2px;
+}
+
+.backLink a {
+  text-decoration: none;
+}
+
+.backLink i {
+  padding-right: 10px;
+}
+
+.backLink a:visited {
+  color: var(--main-dark);
+}
+
+.backLink a:active {
+  background-color: var(--main-orange);
+  border-bottom: 2px solid var(--main-dark);
+  color: var(--white);
+}
+
+.backLink a:hover,
+.backLink a:focus {
+  border-bottom: 2px solid var(--main-orange);
+  color: var(--main-dark);
+  padding-bottom: 0;
+}
