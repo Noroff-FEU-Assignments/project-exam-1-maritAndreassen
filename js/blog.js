@@ -7,11 +7,9 @@ const blogpostContainer = document.querySelector(".blogpost-container");
 let imgList = [];
 
 async function getBlogpostAndMedia() {
-  getMedia(mediaUrl + "?per_page=20", imgList);
+  getMedia(mediaUrl + "?per_page=30", imgList);
   await getPosts(baseUrl + "?per_page=20", createHTML);
 }
-
-getBlogpostAndMedia();
 
 function getBlogpostImg(mediaId) {
   const result = imgList.find((img) => img.id === mediaId);
@@ -27,3 +25,5 @@ function createHTML(blogPost) {
     </div>
   </article>`;
 }
+
+getBlogpostAndMedia();
