@@ -88,15 +88,20 @@
   right: 15px;
 }
 
+.wrapper i:hover {
+  background-color: var(--main-orange);
+}
+
 .wrapper .carousel {
   display: flex;
-  max-width: 928px;
+  max-width: 942px;
   white-space: nowrap;
   overflow: hidden;
   scroll-behavior: smooth;
 }
 
-.carousel article {
+.carousel a {
+  cursor: pointer;
   height: 340px;
   margin-left: 14px;
   width: 300px;
@@ -104,6 +109,20 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding: 0;
+  text-decoration: none;
+}
+
+.carousel a:last-child {
+  margin-right: 0;
+}
+
+.carousel a:first-child {
+  margin-left: 0;
+}
+
+.carousel a:hover {
+  text-decoration: underline;
 }
 
 .img {
@@ -113,7 +132,8 @@
 
 .title {
   background: rgba(255, 255, 255, 0.9);
-  padding: 4px 6px;
+  padding: 20px 6px;
+  margin: 0;
   width: inherit;
 }
 

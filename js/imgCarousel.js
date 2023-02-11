@@ -19,13 +19,10 @@ function getBlogpostImg(mediaId) {
 
 function createHTML(blogPost) {
   blogPostCarousel.innerHTML += `
-  <article src="/pages/about.html" class="img" style="background-image:url('${getBlogpostImg(
-    blogPost.featured_media
-  )}')">  
-  <div class="title">
-      <h2>${blogPost.title.rendered}</h2> 
-    </div>
-  </article>`;
+  <a href="../pages/blogPage.html?id=${blogPost.id}" 
+  class="img" style="background-image:url('${getBlogpostImg(blogPost.featured_media)}')">  
+      <h2 class="title">${blogPost.title.rendered}</h2> 
+  </a>`;
 }
 
 getBlogpostAndMedia();
@@ -45,29 +42,3 @@ arrowIcons.forEach((icon) => {
     setTimeout(() => showHideIcons(), 60);
   });
 });
-
-/*const autoSlide = () => {
-  if (carousel.scrollLeft == carousel.scrollWidth - carousel.scrollWidth) return;
-  let positionDiff = Math.abs(positionDiff);
-  let firstImgWidth = firstImg.clientWidth + 14;
-  let valDifference = firstImgWidth - positionDiff;
-  let prevScrollLeft;
-
-  if (carousel.scrollLeft > prevScrollLeft) {
-    return (carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : positionDiff);
-  }
-  carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : positionDiff;
-};*/
-
-/*
-<article class="img" style="background-image:url('${getBlogpostImg(blogPost.featured_media)}')">  
-  <div class="content">
-      <h2>${blogPost.title.rendered}</h2> 
-    </div>
-  </article>
-*/
-
-/*function setButtonHover() {
-  let mainImg = document.querySelector(".mainImg");
-  mainImg.state.addEventListener ===   
-}*/
