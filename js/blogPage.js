@@ -34,4 +34,31 @@ async function createHTML(blogPost) {
   <div class="img" style="background-image:url('${imgUrl}')"></div>
   <h1>${blogPost.title.rendered}</h1>
   ${blogPost.content.rendered}`;
+
+  const img = document.querySelector(".img");
+  img.addEventListener("click", (e) => {
+    imgModal(imgUrl);
+  });
 }
+
+imgModal = (src) => {
+  const modal = document.createElement("div");
+  modal.setAttribute("class", "modal");
+  document.querySelector(".blogpostPage").append(modal);
+
+  const newImage = document.createElement("img");
+  newImage.setAttribute("src", src);
+
+  document.addEventListener("click", (e) => {
+    if (e.target == document.querySelector(".modal")) {
+      modal.remove();
+    }
+  });
+
+  const closeBtn = document.createElement("i");
+  closeBtn.setAttribute("class", "fas fa-times closeBtn");
+  closeBtn.onclick = () => {
+    modal.remove();
+  };
+  modal.append(newImage, closeBtn);
+};

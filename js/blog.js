@@ -18,12 +18,13 @@ function getBlogpostImg(mediaId) {
 
 function createHTML(blogPost) {
   blogpostContainer.innerHTML += `
-  <article class="img" style="background-image:url('${getBlogpostImg(blogPost.featured_media)}')">  
+  <li class="img" 
+  style="background-image:url('${getBlogpostImg(blogPost.featured_media)}')">  
   <div class="content">
       <h2>${blogPost.title.rendered}</h2> 
       <a href="./blogPage.html?id=${blogPost.id}" class="main-button view-button">VIEW</a>
     </div>
-  </article>`;
+  </li>`;
 }
 
 getBlogpostAndMedia();

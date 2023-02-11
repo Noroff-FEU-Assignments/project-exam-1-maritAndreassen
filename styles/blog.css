@@ -5,7 +5,7 @@
   grid-gap: 1rem;
 }
 
-.blogpost-container article {
+.blogpost-container li {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
