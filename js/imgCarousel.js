@@ -21,7 +21,7 @@ function createHTML(blogPost) {
   blogPostCarousel.innerHTML += `
   <a href="../pages/blogPage.html?id=${blogPost.id}" 
   class="img" style="background-image:url('${getBlogpostImg(blogPost.featured_media)}')">  
-      <h2 class="title">${blogPost.title.rendered}</h2> 
+    <h2 class="title">${blogPost.title.rendered}</h2> 
   </a>`;
 }
 
