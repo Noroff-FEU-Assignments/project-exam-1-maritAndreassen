@@ -1,5 +1,6 @@
 const baseUrl = "https://myblog.maritstuderer.one/wp-json/wp/v2/posts";
 const mediaUrl = "https://myblog.maritstuderer.one/wp-json/wp/v2/media/";
+const corsEnabledUrl = "https://noroffcors.onrender.com/";
 const blogpostPage = document.querySelector(".blogpostPage");
 const title = document.querySelector("title");
 
@@ -15,7 +16,7 @@ async function getBlogPost(url) {
 }
 
 async function getImg(mediaID) {
-  const response = await fetch(mediaUrl + mediaID);
+  const response = await fetch(corsEnabledUrl + mediaUrl + mediaID);
   const result = await response.json();
   return result.media_details.sizes.large.source_url;
 }
@@ -24,7 +25,7 @@ function getBlogPostPage() {
   const id = window.location.href.split("=")[1];
   const blogPageUrl = `${baseUrl}/${id}`;
   console.log(id);
-  getBlogPost(blogPageUrl);
+  getBlogPost(corsEnabledUrl + blogPageUrl);
 }
 
 getBlogPostPage();
