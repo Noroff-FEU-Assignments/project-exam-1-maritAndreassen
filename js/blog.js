@@ -2,14 +2,13 @@ import { getPosts, getMedia } from "./getBlogPost.js";
 
 const baseUrl = "https://myblog.maritstuderer.one/wp-json/wp/v2/posts";
 const mediaUrl = "https://myblog.maritstuderer.one/wp-json/wp/v2/media/";
-const corsEnabledUrl = "https://noroffcors.onrender.com/";
 const blogpostContainer = document.querySelector(".blogpost-container");
 
 let imgList = [];
 
 async function getBlogpostAndMedia() {
-  await getMedia(corsEnabledUrl + mediaUrl + "?per_page=30", imgList);
-  await getPosts(corsEnabledUrl + baseUrl + "?per_page=20", createHTML);
+  await getMedia(mediaUrl + "?per_page=30", imgList);
+  await getPosts(baseUrl + "?per_page=20", createHTML);
 }
 
 function getBlogpostImg(mediaId) {
