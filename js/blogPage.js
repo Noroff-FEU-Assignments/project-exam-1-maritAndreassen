@@ -1,6 +1,7 @@
 const baseUrl = "https://myblog.maritstuderer.one/wp-json/wp/v2/posts";
 const mediaUrl = "https://myblog.maritstuderer.one/wp-json/wp/v2/media/";
 const blogpostPage = document.querySelector(".blogpostPage");
+const title = document.querySelector("title");
 
 async function getBlogPost(url) {
   try {
@@ -35,6 +36,7 @@ async function createHTML(blogPost) {
   <h1>${blogPost.title.rendered}</h1>
   ${blogPost.content.rendered}`;
 
+  title.innerHTML = blogPost.title.rendered;
   const img = document.querySelector(".img");
   img.addEventListener("click", (e) => {
     imgModal(imgUrl);
